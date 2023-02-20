@@ -288,15 +288,29 @@ Default: 9px
 
 .meal-tags {
   margin-bottom: 1.2rem;
+  /* the elements are one after another */
+  display: flex;
+
+  gap: 0.4rem;
 }
 
 .tag {
+  /* the elements do not overlap each other if they are in two lines */
+  display: inline-block;
+
   padding: 0.4rem 0.8rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #333;
   border-radius: 100px;
   font-weight: 600;
+
+  /* if we want to hide text that don't fit the container by ... */
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* this is done in order to prevent the transfer of text in two lines */
+  white-space: nowrap;
 }
 
 .tag--vegetarian {
