@@ -431,25 +431,27 @@ Default: 9px
 }
 
 .pricing-plan {
+  display: flex;
+  flex-direction: column;
   border-radius: 11px;
   width: 75%;
 }
 
-.pricing-paln--starter {
+.pricing-plan--starter {
   /* to justify the left card to the "center" */
   justify-self: end;
   border: 2px solid #fdf2e9;
   padding: 4.6rem;
 }
 
-.pricing-paln--complete {
+.pricing-plan--complete {
   background-color: #fdf2e9;
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
 }
 
-.pricing-paln--complete::after {
+.pricing-plan--complete::after {
   content: "Best value";
   position: absolute;
   top: 6%;
@@ -498,7 +500,11 @@ Default: 9px
 }
 
 .plan-sing-up {
+  margin-top: auto;
   text-align: center;
+}
+
+.plan-sing-up--bb {
   margin-top: 4.8rem;
 }
 
