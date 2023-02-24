@@ -544,6 +544,10 @@ Default: 9px
 /* CTA SECTION */
 /* ********************************************** */
 
+.section-cta {
+  padding: 9.6rem 0;
+}
+
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -614,12 +618,15 @@ Default: 9px
   color: #aaa;
 }
 
-.cta-form select {
-}
-.cta-form button {
-}
-
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 50%);
+}
+
+/* ********************************************** */
+/* FOOTER SECTION */
+/* ********************************************** */
+
+.footer {
+  padding: 9.6rem 0;
 }
